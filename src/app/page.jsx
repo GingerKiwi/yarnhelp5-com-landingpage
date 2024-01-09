@@ -26,7 +26,7 @@ export default function Home() {
         <div className='lg:col-span-2 lg:col-start-1 row-span-2'>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit mollitia eaque commodi velit odio voluptatem porro necessitatibus consequatur nam, doloribus maiores officia explicabo ipsa eius quam, hic provident tempore optio.</p>
           <ul>
-            <li>Item 1</li>
+            <li>Item 1 link</li>
             <li>Item 2</li>
             <li>Item 3</li>
           </ul>
