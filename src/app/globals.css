@@ -2,20 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Goudy+Bookletter+1911&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,200;1,6..72,300;1,6..72,400;1,6..72,500;1,6..72,600&family=Niconne&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --cream: #f2eae4;
+  --darkForest: #2a2d2a;
+  --blackBrown: #211c16;
+
+  --lightPlum:#d2bfc6;
+  --plum: #6f4e5b;
+  --darkPlum: #544545;
+
+  --pureWhite: #ffffff;
+  --pureBlack: #000000;
 }
 
+/* body {
+  background-color: var(--cream);
+} */
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
+} */
+/* 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +43,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
