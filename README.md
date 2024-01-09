@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yarn Help 5.0 Landing Page
 
-## Getting Started
+This is a (hopefully) quick landing page for Yarn Help 5.0 central site. It's being built with Tailwind CSS and vanilla JS.
 
-First, run the development server:
+The majority of the Yarn Help 5.0 apps will be built with Next.js and Tailwind CSS. As this is a landing page, I'm using vanilla JS to get it spun up quickly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About Yarn Help 5.0
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now Yarn Help! is being built out as a multi-app site with each app in its own subdomain connected to the main site at the apex domain. 🥳
+e.g.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Central site: yarnhelp.com
+- Patterns site: knittingpatterns.yarnhelp.com
+- Astro blog: blog.yarnhelp.com
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+That lets me use the best stack for each app (managing complexity).
+It also doesn't pigeonhole me into one stack.
 
-## Learn More
+All the apps will share themes. 🎨
 
-To learn more about Next.js, take a look at the following resources:
+- The majority of the css will be Tailwind.
+- However, I'm designing with flexibility in mind.
+- Having a master design file / design system lets me use another css framework and/or vanilla css without a lot of fuss.
+- And of course it's accessible from the beginning. A11y first is less work, less fuss, more coding fun that way!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To facilitate sharing, documentation, accessibility testing and reuse, I'm using Storybook for the first time. 📚
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I'm currently almost done the basic functionality of the new Free Knitting Patterns app, being built with Next.js and Notion API.
 
-## Deploy on Vercel
+- I'm using Jon Meyers Jon Meyers's egghead.io course Build Static Pages Dynamically using Next.js and the Notion API course as a starting point.
+- But I'm extending the functionality and adding themes.
+- And yes, I'm also designing all 17 knitting patterns, and will be knitting samples for a photo gallery during 2024.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+A huge thanks to Brian Morrison in James Q Quick's Discord for getting me interested in using the Notion api to build an app! He's done some really cool things with it.
