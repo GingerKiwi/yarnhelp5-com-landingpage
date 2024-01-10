@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Image from 'next/image'
 import coverImageDesktop from '../assets/Image_LandingPage_Balls_Desktop_425x832.png'
+import coverImageMobile from '../assets/Image_LandingPage_Mobile_320x165.png'
+import coverFallbackImage from '../assets/anastasia-zhenina-2V3EFff6-V8-unsplash.jpg'
+
 
 export default function Home() {
   return (
@@ -16,19 +19,44 @@ export default function Home() {
       </Head>
     
     <main className='grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 h-screen'>
+
+    {/* <img src={ coverFallbackImage }
+  srcset={`${coverImageMobile} 320w, ${coverImageDesktop} 834w`} alt="balls of yarn"  className='object-scale-down h-screen bg-contain md:object-right md:col-start-3 row-span-3'
+/> */}
+
       
-      <Image src={ coverImageDesktop } alt="balls of yarn"  className='object-scale-down h-screen bg-contain md:object-right md:col-start-3 row-span-3'/>
+      <Image 
+      src={ coverImageMobile }
+      alt="PUT ALT HERE!!!" 
+      width={429}
+      quality='max'
+      class='md:hidden md:block  object-cover w-full h-full'
+
+      // class='object-cover hidden sm:block w-full h-screen bg-cover object-top'
+      /> 
+
+      <Image 
+      src={ coverImageDesktop } 
+      alt="balls of yarn"  
+      width={430}
+      class='hidden md:block  md:w-full md:object-scale-down md:h-screen md:bg-contain md:object-right md:col-start-3 md:row-span-3'
+      // className='hidden md:block w-full h-full object-scale-down h-screen bg-contain md:object-right md:col-start-3 row-span-3'
+      />
       
 
-      <div className='lg:col-span-2 lg:col-start-1 row-span-3 pl-24'>
-        <h1 className="text-blackBrown font-code text-6xl">Yarn Help!</h1>
-        <h2 className='text-darkPlum font-extrabold font-sans text-4xl'>Coming Soon</h2>
+      <div className='md:col-span-2 md:col-start-1 row-span-3 px-9 md:pl-24'>
+        <h1 className="text-blackBrown font-code text-6xl ">Yarn Help!</h1>
+        <h2 className='text-darkPlum font-extrabold font-sans text-4xl pb-5'>Coming Soon</h2>
         <div className='lg:col-span-2 lg:col-start-1 row-span-2'>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit mollitia eaque commodi velit odio voluptatem porro necessitatibus consequatur nam, doloribus maiores officia explicabo ipsa eius quam, hic provident tempore optio.</p>
-          <ul>
-            <li>Item 1 link</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+          <p className="mr-4 font-bold pb-4">I’m currently building out version 5.0 of Yarn Help!. This landing page is being built in public, as will all the other apps. </p>
+          <p className="mr-4 font-bold pb-4">As different images - not just different / relative sizes of images - need to be used on mobile and desktop to illustrate concepts, this landing page is an experiment to puzzle out the best repeatable solution.</p>
+          {/* The project started as a simple codepen in early 2022. Yarn Help is now being developed as a multi-app collection with each app deployed at a subdomain and connected to this central site.  */}
+          <p>The app collection is being developed gradually with care and attention paied to developing a standard theme and UI library. As at least one of the apps will be a community project with fellow TorotnoJS members Storybook is being used.</p>
+          <ul className="mt-8">
+                <li class="text-plum font-semibold underline pb-2 hover:font-extrabold focus:font-extrabold"> <a href="https://www.linkedin.com/posts/elizabethmccready_yarn-help-ver-50-design-files-activity-7147957205797863424-KEvD?utm_source=share&utm_medium=member_desktop">Read more about Yarn Help! in this LinkedIn Post</a></li>
+                <li className="text-plum font-bold underline pb-2"><a href="https://www.linkedin.com/in/elizabethmccready/">Contact me on LinkedIn</a></li>
+                <li className="text-plum font-bold underline pb-2"> <a href="https://gingerkiwi.dev">View my developer blog and portfolio</a></li>
+                <li className="text-plum font-bold underline pb-2"> <a href="https://www.figma.com/file/ae6fCCMghd99T9otjQRf5G/YarnHelp2024?type=design&node-id=10%3A1524&mode=design&t=7xpVu222A61jBIqP-1">View the master Figma design file.</a></li>
           </ul>
         </div>
      </div>

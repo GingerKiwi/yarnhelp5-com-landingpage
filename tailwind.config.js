@@ -7,7 +7,7 @@ const config = {
 	  ],
 	theme: {
 		screens: {
-			sm: '320px', // Larger iPhones
+			sm: '430px', // Larger iPhones
 			md: '834px', // iPad Pro and up
 			lg: '1024px', //MAIN OTHER SIZE! desktop & iPad Pro and UP
 			xl: '1440px', // 
